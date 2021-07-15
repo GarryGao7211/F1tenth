@@ -1,0 +1,10 @@
+<launch>
+  <node
+    pkg="yifei_roslab"
+    type="lidar_processing"
+    name="lidar_processing" 
+    output="screen"
+  />
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find yifei_roslab)/rviz/simulator1.rviz"/>
+</launch> 
